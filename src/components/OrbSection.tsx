@@ -1,4 +1,4 @@
-import Skin from "@/assets/2nd-image.jpeg";
+import Skin from "@/assets/2nd-image.jpg";
 
 export function OrbSection() {
   return (
