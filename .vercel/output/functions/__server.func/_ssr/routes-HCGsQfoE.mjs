@@ -1,9 +1,10 @@
 import { r as __toESM } from "../_runtime.mjs";
+import { t as logo_default } from "./logo-CiACMkqt.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { n as gsapWithCSS, t as ScrollTrigger } from "../_libs/gsap.mjs";
 import { t as Lenis } from "../_libs/lenis.mjs";
 import { a as Menu, c as Hexagon, d as CircleCheck, f as ChevronRight, i as Orbit, l as FileText, m as Apple, n as Twitter, o as Linkedin, p as ArrowRight, r as ScanFace, s as Instagram, t as X, u as Cylinder } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-wFt3Cv7G.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-HCGsQfoE.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 gsapWithCSS.registerPlugin(ScrollTrigger);
@@ -42,7 +43,6 @@ function scrollToSection(id) {
 	});
 	else target.scrollIntoView({ behavior: "smooth" });
 }
-var logo_default = "/assets/logo-DyuOycsE.png";
 function Logo() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: "flex items-center gap-2 shrink-0",
@@ -852,57 +852,6 @@ function Footer() {
 		})]
 	});
 }
-function Loader() {
-	const loaderRef = (0, import_react.useRef)(null);
-	const iconRef = (0, import_react.useRef)(null);
-	const textRef = (0, import_react.useRef)(null);
-	(0, import_react.useEffect)(() => {
-		const ctx = gsapWithCSS.context(() => {
-			gsapWithCSS.timeline().to([iconRef.current, textRef.current], {
-				y: 0,
-				opacity: 1,
-				duration: 1,
-				stagger: .15,
-				ease: "power4.out"
-			}).to([iconRef.current, textRef.current], {
-				y: -30,
-				opacity: 0,
-				duration: .6,
-				delay: .8,
-				stagger: .1,
-				ease: "power3.in"
-			}).to(loaderRef.current, {
-				yPercent: -100,
-				duration: 1.2,
-				ease: "expo.inOut"
-			});
-		}, loaderRef);
-		return () => ctx.revert();
-	}, []);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		ref: loaderRef,
-		className: "fixed inset-0 z-50 flex items-center justify-center bg-white pointer-events-none",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "flex items-center gap-3",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "overflow-hidden pt-2 pb-2",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-					ref: iconRef,
-					src: logo_default,
-					alt: "logo",
-					className: "h-12 w-12 object-contain translate-y-12 opacity-0"
-				})
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "overflow-hidden pt-2 pb-2",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-					ref: textRef,
-					className: "block text-4xl font-semibold tracking-tight text-black translate-y-12 opacity-0",
-					children: "Nuvé"
-				})
-			})]
-		})
-	});
-}
 function Index() {
 	const rootRef = (0, import_react.useRef)(null);
 	useSmoothScroll();
@@ -1126,10 +1075,10 @@ function Index() {
 		}, rootRef);
 		return () => ctx.revert();
 	}, []);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 		ref: rootRef,
 		className: "min-h-screen bg-white relative",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Loader, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
 			"data-anim": "shell",
 			className: "w-full overflow-hidden",
 			children: [
@@ -1141,7 +1090,7 @@ function Index() {
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Manifesto, {}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Footer, {})
 			]
-		})]
+		})
 	});
 }
 //#endregion

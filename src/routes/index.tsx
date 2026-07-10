@@ -11,7 +11,6 @@ import { OrbSection } from "@/components/OrbSection";
 import { Manifesto } from "@/components/Manifesto";
 import { AIGuidance } from "@/components/AIGuidance";
 import { Footer } from "@/components/Footer";
-import { Loader } from "@/components/Loader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -240,8 +239,6 @@ function Index() {
 
   return (
     <div ref={rootRef} className="min-h-screen bg-white relative">
-      <Loader />
-
       <main data-anim="shell" className="w-full overflow-hidden">
         <Header />
         <Hero />
