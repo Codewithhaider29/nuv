@@ -1,15 +1,12 @@
 import { Apple, Menu, X } from "lucide-react";
 import { scrollToSection } from "@/lib/smooth-scroll";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 function Logo() {
   return (
     <div className="flex items-center gap-2 shrink-0">
-      <img
-        src="./src/assets/logo.png"
-        alt="Nuvé logo"
-        className="h-7 w-7 sm:h-8 sm:w-8 object-contain"
-      />
+      <img src={logo} alt="Nuvé logo" className="h-8 w-8 sm:h-10 sm:w-10 object-contain" />
       <span className="text-lg sm:text-xl font-semibold tracking-tight text-black">Nuvé</span>
     </div>
   );

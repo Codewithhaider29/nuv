@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import logo from "@/assets/logo.png";
 
 export function Loader() {
   const loaderRef = useRef<HTMLDivElement>(null);
@@ -50,7 +51,7 @@ export function Loader() {
         <div className="overflow-hidden pt-2 pb-2">
           <img
             ref={iconRef}
-            src="./src/assets/logo.png"
+            src={logo}
             alt="logo"
             className="h-12 w-12 object-contain translate-y-12 opacity-0"
           />

@@ -14,14 +14,6 @@ export default defineConfig({
       server: {
         entry: "server",
       },
-      assetsDir: "static",
-      build: {
-        staticNodeEnv: false,
-        inlineCss: {
-          enabled: true,
-          transformAssets: true,
-        },
-      },
     }),
     tailwindcss(),
     viteReact(),
